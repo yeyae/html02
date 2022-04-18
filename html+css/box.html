@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* width, height 속성 글자를 감싸는 영역의 크기 지정 */
+            width : 100px;
+            /* 전체 너비 = width + 2 x(margin + border + padding)*/
+            /* 전체 높이 = height + 2 x(margin + border + padding)*/
+            height : 100px;
+            background-color: red;
+
+            /* magin 속성은 마진의너비 지정 padding은 패딩의 너비를 지정*/
+            border: 10px solid black;
+            margin: 10px ; /* 위아래 왼쪽오른쪽*/
+            padding: 10px;
+        }
+        div:first-child {
+            background-color: red;
+            box-sizing: content-box;
+        }
+
+        div:nth-child(2) {
+            background-color: orange;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

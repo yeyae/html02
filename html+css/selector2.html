@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 동위 선택자 */
+        /* h1태그 바로 뒤에 위치하는 h2태그의 color 속성을 red */
+        h1 + h2 { color : red ;}
+        /* h1태그 뒤에 위치하는 h2태그의 배경 속성을 oragne */
+        h1 ~ h2 {background-color: orange;}
+        
+        /* 상태 선택자 */
+        /* checked : 체크 상태의 input 태그를 선택 */
+        /* focus : 초점이 맞추어진 input 태그를 선택 */
+        /* enabled : 사용이 가능한 input 태그를 선택 */
+        input:enabled {
+            background-color: gray;
+        }
+        input:focus {
+            background-color: blue;
+        }
+        /* disabled : 사용이 불가능한 input 태그를 선택*/
+        input:disabled {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Header</h1>
+    <h2>header - 2</h2>
+    <h2>header - 2</h2>
+    <h2>header - 2</h2>
+    <h2>header - 2</h2>
+    <input type="text" value="enabled">
+    <input type="text" value="disabled" disabled> <br/>
+    <input type="text">
+</body>
+</html>

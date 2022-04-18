@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* % 단위는 기본 설정된 크기에서 상대적으로 크기 조절 */
+        /* em 단위는 기본 설정된 크기 * 배수 
+        1배 = 1em = 100% 
+        1.5배 = 1.5em = 150% 상대적인 크기 */
+
+        /* px 절대적인 크기 단위 */
+        p:nth-child(1) {}
+        p:nth-child(2) { font-size: 20px;}
+        p:nth-child(3) { font-size: 24px;}
+        p:nth-child(4) { font-size: 32px;}
+
+        * { /* 전체 태그 */
+            font-size: 0;
+        }
+        h1 {
+            font-size: 3.0em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in ratione vitae facilis perferendis consectetur eaque, impedit possimus itaque culpa ex voluptates. Perferendis ullam neque dignissimos. Aperiam perferendis doloremque quae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in ratione vitae facilis perferendis consectetur eaque, impedit possimus itaque culpa ex voluptates. Perferendis ullam neque dignissimos. Aperiam perferendis doloremque quae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in ratione vitae facilis perferendis consectetur eaque, impedit possimus itaque culpa ex voluptates. Perferendis ullam neque dignissimos. Aperiam perferendis doloremque quae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in ratione vitae facilis perferendis consectetur eaque, impedit possimus itaque culpa ex voluptates. Perferendis ullam neque dignissimos. Aperiam perferendis doloremque quae.</p>
+    <h1>TITLE1</h1>
+    <h2>TITLE2</h2>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 후손 선택자 선택자1 선택자2 */
+			#header h1{
+				/* id =header 인 태그의 후손 h1 요소 */
+				color: red;
+			}
+      /* 자손 선택자 선택자1 > 선택자2 */
+			#section > h1{
+				/* id=section 인 태그의 후손 h1 요소 */
+				color: blue;
+			}
+			/* id가 header인 태그의 후손인 h1과 id가 header인 태그의 후손 h2 */
+			#header h1, #header h2 {
+				color: orange;
+			}
+			/* 반응 선택자 */ 
+			h1:hover { /* h1 태그 위에 마우스를 올릴 경우에 적용된다. */
+				color: white;
+			}
+			h1:active { /* h1 태그를 마우스로 클릭할 때 적용된다. */
+				color: green;
+			}
+			#innerh1:hover { /* 후손 선택자를 사용하면 우선순위에 밀리니까 id선택자 사용. */
+				color:white;
+			}
+    </style>
+  </head>
+  <body>
+    <div id="header">
+			<h2>HEADER</h2> 
+      <h1 class="title">title</h1>
+      <div id="nav"><h1 id="innerh1">navigation</h1></div>
+    </div>
+    <div id="section">
+      <h1 class="title">title2</h1>
+    </div>
+		<h2>HEADER</h2>
+		<h1>HEADER1</h1>
+		<h1>HEADER1</h1>
+  </body>
+</html>

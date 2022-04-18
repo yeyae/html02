@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 일반 구조 선택자  : 특정한 위치에 있는 태그를 선택 */
+        ul {
+            overflow: hidden;
+        }
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+        li:first-child { /* 형제 관계 중에서 첫 번째에 위치하는 태그 선택 */
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child { /* 형제 관계중에서 마지막에 위치하는 태그 선택 */
+            border-radius: 0 10px 10px 0;
+        }
+        li:nth-child(2n) { /* nth-child 는 2n 번째에 위치하는 태그 선택*/
+            background-color: brown;
+        }
+        li:nth-child(2n+1) { /* 2n+1 번째에 위치하는 태그 선택 */
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Thrid</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+</body>
+</html>
